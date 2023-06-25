@@ -15,6 +15,7 @@ import {
   NavDropdown,
   Offcanvas,
 } from "react-bootstrap";
+import WalletModal from "../wallet_modal/WalletModal";
 // import NavDropdown from "react-bootstrap";
 // import Offcanvas from "react-bootstrap";
 
@@ -89,37 +90,22 @@ export default function Claim_header() {
               {/* <Nav.Link href="#home" className="header_ka">
                 Platform
               </Nav.Link> */}
-              <Nav.Link href="#about" className="header_ka">
+              <Nav.Link href="/" className="header_ka">
                 Home
               </Nav.Link>
-              <Nav.Link href="#tokenomics" className="header_ka">
+              <Nav.Link
+                href="https://aishiba.pro/whitepaper.pdf"
+                target="_blank"
+                className="header_ka"
+              >
                 Whitepaper
               </Nav.Link>
-              <Nav.Link href="#roadmap" className="header_ka">
-                win 250k
+              <Nav.Link href="https://bscscan.com/address/0x4be2500d215103e6e4bb172558bf156f9d9fc48d"   target="_blank" className="header_ka">
+                Smart contract
               </Nav.Link>
-              <Nav.Link href="#team" className="header_ka">
-                how to buy
+              <Nav.Link href="https://twitter.com/aishib_pro?s=21" target="_blank" className="header_ka">
+                Twitter
               </Nav.Link>
-              <Nav.Link href="#faq" className="header_ka">
-                contact us
-              </Nav.Link>
-
-              {/* <select
-                className="language"
-                value={selectedValue}
-                onChange={handleChange}
-              >
-                <option value="">English</option>
-                <option value="Chinese">Chinese</option>
-                <option value="Czech">Czech</option>
-                <option value="Dutch">Dutch</option>
-                <option value="French">French</option>
-                <option value="German">German</option>
-                <option value="Hungarian">Hungarian</option>
-                <option value="Japanese">Japanese</option>
-                <option value="Korean">Korean</option>
-              </select> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
